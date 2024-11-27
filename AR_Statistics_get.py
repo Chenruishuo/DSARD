@@ -15,7 +15,7 @@ from AR_detection_model import *
 thread = 3  # if you use multithread
 process = None  # if you use multiprocess
 # one fits for test
-data_item = r"something.fits"
+data_item = r"hmi.M_45s.20221112_231200_TAI.2.magnetogram.fits"
 data_dir = r""  # data folder
 butterfly_csv_write = "test.csv"
 breakpoint_resume = False

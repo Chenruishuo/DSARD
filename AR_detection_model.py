@@ -16,7 +16,7 @@ import time
 import math
 from math import radians, sin, cos, sqrt, atan2
 
-data_item = r"something.fits"
+data_item = r"hmi.M_45s.20221112_231200_TAI.2.magnetogram.fits"
 save_cls_pic = True
 
 
