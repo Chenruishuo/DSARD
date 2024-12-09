@@ -25,4 +25,4 @@ python -u AR_detection_model.py
 ```
 
 ## Citing
-This repository is archived on Zenodo with [![DOI](https://zenodo.org/badge/894381894.svg)](https://doi.org/10.5281/zenodo.14222292)
+This repository is archived on Zenodo with [![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.14227550.svg)](https://doi.org/10.5281/zenodo.14227550)
