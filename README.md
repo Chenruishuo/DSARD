@@ -1,5 +1,5 @@
 # DSARD: Dbscan²-based Solar Active Regions Detection
-This is the codebase of the paper *Statistical Analyses of Solar Active Region in SDO/HMI Magnetograms detected by Unsupervised Machine Learning*.
+This is the codebase of the paper *Statistical Analyses of Solar Active Region in SDO/HMI Magnetograms detected by Unsupervised Machine Learning Method DSARD*.
 
 We proposed an automated detection model with "Secondary Clustering" based on the DBSCAN clustering method, which utilizes SDO's HMI data and achieves pixel-level identification of solar active regions.<br>
 
