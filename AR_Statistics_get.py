@@ -132,14 +132,13 @@ def area_correcting(x, y, x0, y0, size):
 def get_clusters_info_list(data_item, name):
     data_item_map = sunpy.map.Map(data_item)
     sum_ar, clusters_pro = get_the_clusters_pro(data_item=data_item)
-    if user == "crs":
-        year = name[3:7]
-        month = name[7:9]
-        day = name[9:11]
-    elif user == "lulu":
-        year = name[10:14]
-        month = name[14:16]
-        day = name[16:18]
+    # for different name format
+    year = name[3:7]
+    month = name[7:9]
+    day = name[9:11]
+    # year = name[10:14]
+    # month = name[14:16]
+    # day = name[16:18]
     list = []
     for cluster_pro in clusters_pro:
         stuff_list = [year, month, day]
