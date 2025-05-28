@@ -464,6 +464,7 @@ def save_threshold_pic(pic, points_with_value, save_dir):
     ax = fig.add_subplot(111)
     ax.set_aspect(1)
     ax.imshow(pic, cmap="Greys")
+    ax.axis('off')
     positive_points = points_with_value[points_with_value[:, 2] > 0]
     negative_points = points_with_value[points_with_value[:, 2] < 0]
     if len(positive_points) > 0:
@@ -489,7 +490,7 @@ def save_threshold_pic(pic, points_with_value, save_dir):
     directory = os.path.dirname(save_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
-    plt.savefig(save_path, dpi=300)
+    plt.savefig(save_path, dpi=300, bbox_inches='tight', pad_inches=0)
     plt.close()
 
 
@@ -501,6 +502,7 @@ def save_clusters_pic(
     ax = fig.add_subplot(111)
     ax.set_aspect(1)
     ax.imshow(pic, cmap="Greys")
+    ax.axis('off')
     for i in range(num_ar):
         if np.any(clusters[i][1]):
             ax.scatter(
@@ -580,7 +582,7 @@ def save_clusters_pic(
     directory = os.path.dirname(save_path)
     if not os.path.exists(directory):
         os.makedirs(directory)
-    plt.savefig(save_path, dpi=300)
+    plt.savefig(save_path, dpi=300, bbox_inches='tight', pad_inches=0)
     plt.close()
 
 
